@@ -1,6 +1,6 @@
 const state = ()=>({
     berita:[],
-    kategori:'health'
+    kategori:'health',
 })
 
 const mutations = {
@@ -9,7 +9,8 @@ const mutations = {
     },
     fetchKategori(state,params){
         state.kategori = params
-    }
+    },
+   
 }
 
 const actions = {
@@ -63,7 +64,8 @@ const actions = {
                 console.log('Error : '+error)
             }
         )
-    }
+    },
+    
 }
 
 export default{
